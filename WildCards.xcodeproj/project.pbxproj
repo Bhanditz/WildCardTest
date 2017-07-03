@@ -7,17 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AA47F79D1F0AC3A500286499 /* CardDeckExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA47F79C1F0AC3A500286499 /* CardDeckExt.swift */; };
 		AA720A991F0ABC63002ED9E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA720A981F0ABC63002ED9E7 /* AppDelegate.swift */; };
-		AA720A9B1F0ABC63002ED9E7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA720A9A1F0ABC63002ED9E7 /* ViewController.swift */; };
+		AA720A9B1F0ABC63002ED9E7 /* CardDeckVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA720A9A1F0ABC63002ED9E7 /* CardDeckVC.swift */; };
 		AA720A9E1F0ABC63002ED9E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA720A9C1F0ABC63002ED9E7 /* Main.storyboard */; };
 		AA720AA01F0ABC63002ED9E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA720A9F1F0ABC63002ED9E7 /* Assets.xcassets */; };
 		AA720AA31F0ABC63002ED9E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA720AA11F0ABC63002ED9E7 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AA47F79C1F0AC3A500286499 /* CardDeckExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardDeckExt.swift; sourceTree = "<group>"; };
 		AA720A951F0ABC63002ED9E7 /* WildCards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WildCards.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA720A981F0ABC63002ED9E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AA720A9A1F0ABC63002ED9E7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AA720A9A1F0ABC63002ED9E7 /* CardDeckVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDeckVC.swift; sourceTree = "<group>"; };
 		AA720A9D1F0ABC63002ED9E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AA720A9F1F0ABC63002ED9E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AA720AA21F0ABC63002ED9E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -54,14 +56,31 @@
 		AA720A971F0ABC63002ED9E7 /* WildCards */ = {
 			isa = PBXGroup;
 			children = (
+				AA720AAA1F0ABDCD002ED9E7 /* VC */,
 				AA720A981F0ABC63002ED9E7 /* AppDelegate.swift */,
-				AA720A9A1F0ABC63002ED9E7 /* ViewController.swift */,
 				AA720A9C1F0ABC63002ED9E7 /* Main.storyboard */,
 				AA720A9F1F0ABC63002ED9E7 /* Assets.xcassets */,
 				AA720AA11F0ABC63002ED9E7 /* LaunchScreen.storyboard */,
 				AA720AA41F0ABC63002ED9E7 /* Info.plist */,
 			);
 			path = WildCards;
+			sourceTree = "<group>";
+		};
+		AA720AAA1F0ABDCD002ED9E7 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				AA720AAB1F0ABE0D002ED9E7 /* CardDeck */,
+			);
+			name = VC;
+			sourceTree = "<group>";
+		};
+		AA720AAB1F0ABE0D002ED9E7 /* CardDeck */ = {
+			isa = PBXGroup;
+			children = (
+				AA720A9A1F0ABC63002ED9E7 /* CardDeckVC.swift */,
+				AA47F79C1F0AC3A500286499 /* CardDeckExt.swift */,
+			);
+			name = CardDeck;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +156,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA720A9B1F0ABC63002ED9E7 /* ViewController.swift in Sources */,
+				AA720A9B1F0ABC63002ED9E7 /* CardDeckVC.swift in Sources */,
+				AA47F79D1F0AC3A500286499 /* CardDeckExt.swift in Sources */,
 				AA720A991F0ABC63002ED9E7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -304,6 +324,7 @@
 				AA720AA91F0ABC63002ED9E7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
