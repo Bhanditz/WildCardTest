@@ -28,6 +28,26 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "AAD4E71E1F0BE4450028E089"
+               BuildableName = "WildCardsTests.xctest"
+               BlueprintName = "WildCardsTests"
+               ReferencedContainer = "container:WildCards.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "AAD4E72C1F0BE8F20028E089"
+               BuildableName = "WildCardsUITests.xctest"
+               BlueprintName = "WildCardsUITests"
+               ReferencedContainer = "container:WildCards.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference

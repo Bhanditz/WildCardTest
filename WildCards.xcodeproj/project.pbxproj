@@ -33,7 +33,26 @@
 		AAD4E7111F0BAA590028E089 /* ImageOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E7101F0BAA590028E089 /* ImageOperation.swift */; };
 		AAD4E7161F0BB62B0028E089 /* ModelManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E7151F0BB62B0028E089 /* ModelManager.swift */; };
 		AAD4E7191F0BB9210028E089 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E7181F0BB9210028E089 /* CardView.swift */; };
+		AAD4E7221F0BE4450028E089 /* WildCardsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E7211F0BE4450028E089 /* WildCardsTests.swift */; };
+		AAD4E7301F0BE8F20028E089 /* WildCardsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E72F1F0BE8F20028E089 /* WildCardsUITests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AAD4E7241F0BE4450028E089 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AA720A8D1F0ABC63002ED9E7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AA720A941F0ABC63002ED9E7;
+			remoteInfo = WildCards;
+		};
+		AAD4E7321F0BE8F20028E089 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AA720A8D1F0ABC63002ED9E7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AA720A941F0ABC63002ED9E7;
+			remoteInfo = WildCards;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		AA3C23DF1F0B954700983F3F /* ArrayResponseMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayResponseMapper.swift; sourceTree = "<group>"; };
@@ -64,10 +83,30 @@
 		AAD4E7101F0BAA590028E089 /* ImageOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageOperation.swift; sourceTree = "<group>"; };
 		AAD4E7151F0BB62B0028E089 /* ModelManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelManager.swift; sourceTree = "<group>"; };
 		AAD4E7181F0BB9210028E089 /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		AAD4E71F1F0BE4450028E089 /* WildCardsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WildCardsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAD4E7211F0BE4450028E089 /* WildCardsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WildCardsTests.swift; sourceTree = "<group>"; };
+		AAD4E7231F0BE4450028E089 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AAD4E72D1F0BE8F20028E089 /* WildCardsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WildCardsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAD4E72F1F0BE8F20028E089 /* WildCardsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WildCardsUITests.swift; sourceTree = "<group>"; };
+		AAD4E7311F0BE8F20028E089 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		AA720A921F0ABC63002ED9E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAD4E71C1F0BE4450028E089 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAD4E72A1F0BE8F20028E089 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -111,6 +150,8 @@
 			children = (
 				AA3C23DE1F0B954700983F3F /* API Network  */,
 				AA720A971F0ABC63002ED9E7 /* WildCards */,
+				AAD4E7201F0BE4450028E089 /* WildCardsTests */,
+				AAD4E72E1F0BE8F20028E089 /* WildCardsUITests */,
 				AA720A961F0ABC63002ED9E7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -119,6 +160,8 @@
 			isa = PBXGroup;
 			children = (
 				AA720A951F0ABC63002ED9E7 /* WildCards.app */,
+				AAD4E71F1F0BE4450028E089 /* WildCardsTests.xctest */,
+				AAD4E72D1F0BE8F20028E089 /* WildCardsUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -147,9 +190,9 @@
 		AA720AAB1F0ABE0D002ED9E7 /* CardDeck */ = {
 			isa = PBXGroup;
 			children = (
-				AAD4E7171F0BB9130028E089 /* View */,
 				AA720A9A1F0ABC63002ED9E7 /* CardDeckVC.swift */,
-				AA47F79C1F0AC3A500286499 /* CardDeckExt.swift */,
+				AAD4E7171F0BB9130028E089 /* View */,
+				AAD4E71A1F0BE22B0028E089 /* Extentions */,
 			);
 			name = CardDeck;
 			sourceTree = "<group>";
@@ -224,6 +267,32 @@
 			name = View;
 			sourceTree = "<group>";
 		};
+		AAD4E71A1F0BE22B0028E089 /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+				AA47F79C1F0AC3A500286499 /* CardDeckExt.swift */,
+			);
+			name = Extentions;
+			sourceTree = "<group>";
+		};
+		AAD4E7201F0BE4450028E089 /* WildCardsTests */ = {
+			isa = PBXGroup;
+			children = (
+				AAD4E7211F0BE4450028E089 /* WildCardsTests.swift */,
+				AAD4E7231F0BE4450028E089 /* Info.plist */,
+			);
+			path = WildCardsTests;
+			sourceTree = "<group>";
+		};
+		AAD4E72E1F0BE8F20028E089 /* WildCardsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AAD4E72F1F0BE8F20028E089 /* WildCardsUITests.swift */,
+				AAD4E7311F0BE8F20028E089 /* Info.plist */,
+			);
+			path = WildCardsUITests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -244,6 +313,42 @@
 			productReference = AA720A951F0ABC63002ED9E7 /* WildCards.app */;
 			productType = "com.apple.product-type.application";
 		};
+		AAD4E71E1F0BE4450028E089 /* WildCardsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AAD4E7261F0BE4450028E089 /* Build configuration list for PBXNativeTarget "WildCardsTests" */;
+			buildPhases = (
+				AAD4E71B1F0BE4450028E089 /* Sources */,
+				AAD4E71C1F0BE4450028E089 /* Frameworks */,
+				AAD4E71D1F0BE4450028E089 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AAD4E7251F0BE4450028E089 /* PBXTargetDependency */,
+			);
+			name = WildCardsTests;
+			productName = WildCardsTests;
+			productReference = AAD4E71F1F0BE4450028E089 /* WildCardsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AAD4E72C1F0BE8F20028E089 /* WildCardsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AAD4E7341F0BE8F20028E089 /* Build configuration list for PBXNativeTarget "WildCardsUITests" */;
+			buildPhases = (
+				AAD4E7291F0BE8F20028E089 /* Sources */,
+				AAD4E72A1F0BE8F20028E089 /* Frameworks */,
+				AAD4E72B1F0BE8F20028E089 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AAD4E7331F0BE8F20028E089 /* PBXTargetDependency */,
+			);
+			name = WildCardsUITests;
+			productName = WildCardsUITests;
+			productReference = AAD4E72D1F0BE8F20028E089 /* WildCardsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -258,6 +363,18 @@
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 45WJ84RX6F;
 						ProvisioningStyle = Automatic;
+					};
+					AAD4E71E1F0BE4450028E089 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 45WJ84RX6F;
+						ProvisioningStyle = Automatic;
+						TestTargetID = AA720A941F0ABC63002ED9E7;
+					};
+					AAD4E72C1F0BE8F20028E089 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 45WJ84RX6F;
+						ProvisioningStyle = Automatic;
+						TestTargetID = AA720A941F0ABC63002ED9E7;
 					};
 				};
 			};
@@ -275,6 +392,8 @@
 			projectRoot = "";
 			targets = (
 				AA720A941F0ABC63002ED9E7 /* WildCards */,
+				AAD4E71E1F0BE4450028E089 /* WildCardsTests */,
+				AAD4E72C1F0BE8F20028E089 /* WildCardsUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -287,6 +406,20 @@
 				AA720AA31F0ABC63002ED9E7 /* LaunchScreen.storyboard in Resources */,
 				AA720AA01F0ABC63002ED9E7 /* Assets.xcassets in Resources */,
 				AA720A9E1F0ABC63002ED9E7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAD4E71D1F0BE4450028E089 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAD4E72B1F0BE8F20028E089 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,7 +456,36 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AAD4E71B1F0BE4450028E089 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAD4E7221F0BE4450028E089 /* WildCardsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAD4E7291F0BE8F20028E089 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAD4E7301F0BE8F20028E089 /* WildCardsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AAD4E7251F0BE4450028E089 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AA720A941F0ABC63002ED9E7 /* WildCards */;
+			targetProxy = AAD4E7241F0BE4450028E089 /* PBXContainerItemProxy */;
+		};
+		AAD4E7331F0BE8F20028E089 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AA720A941F0ABC63002ED9E7 /* WildCards */;
+			targetProxy = AAD4E7321F0BE8F20028E089 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		AA720A9C1F0ABC63002ED9E7 /* Main.storyboard */ = {
@@ -466,6 +628,60 @@
 			};
 			name = Release;
 		};
+		AAD4E7271F0BE4450028E089 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 45WJ84RX6F;
+				INFOPLIST_FILE = WildCardsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mainvolume.WildCardsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WildCards.app/WildCards";
+			};
+			name = Debug;
+		};
+		AAD4E7281F0BE4450028E089 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 45WJ84RX6F;
+				INFOPLIST_FILE = WildCardsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mainvolume.WildCardsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WildCards.app/WildCards";
+			};
+			name = Release;
+		};
+		AAD4E7351F0BE8F20028E089 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 45WJ84RX6F;
+				INFOPLIST_FILE = WildCardsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mainvolume.WildCardsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = WildCards;
+			};
+			name = Debug;
+		};
+		AAD4E7361F0BE8F20028E089 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 45WJ84RX6F;
+				INFOPLIST_FILE = WildCardsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mainvolume.WildCardsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = WildCards;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -486,6 +702,22 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		AAD4E7261F0BE4450028E089 /* Build configuration list for PBXNativeTarget "WildCardsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAD4E7271F0BE4450028E089 /* Debug */,
+				AAD4E7281F0BE4450028E089 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		AAD4E7341F0BE8F20028E089 /* Build configuration list for PBXNativeTarget "WildCardsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAD4E7351F0BE8F20028E089 /* Debug */,
+				AAD4E7361F0BE8F20028E089 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};

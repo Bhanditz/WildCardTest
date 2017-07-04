@@ -30,7 +30,7 @@ class CardDeckVC: UIViewController {
         super.viewDidLoad()
         cardViews = []
         self.addPanReconizer()
-        self.cardView = createCardView()
+        self.cardView = createFirstCardView()
         self.view.addSubview(self.cardView)
         self.countLabel = createCounter()
         self.view.addSubview(self.countLabel)

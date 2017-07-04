@@ -43,7 +43,6 @@ extension CardDeckVC {
     func updateCardView(withTranslation delta:CGPoint) {
         if delta.x < 0 {
             let rStrength = min(delta.x / (self.view.bounds.size.width / 2.0), 1)
-            print(rStrength)
             if fabs(rStrength) >= 1.0 {
                 self.nextCardView()
             }else {
@@ -211,6 +210,14 @@ extension CardDeckVC {
         tempCard.layer.cornerRadius = 8.0
         tempCard.clipsToBounds = true
         return tempCard
+    }
+    
+    func createFirstCardView () -> UIView {
+        let v = self.createCardView()
+        let loadLbl = makeLabel(withText: "loading. swipe to view", rect: CGRect(origin: CGPoint(x: 20.0, y: 0), size: v.bounds.size))
+        v.addSubview(loadLbl)
+        return v
+
     }
     
     func createCardView (withModel model:UserItem) -> UIView {
