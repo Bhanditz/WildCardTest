@@ -10,21 +10,45 @@ import UIKit
 
 
 class CardDeckVC: UIViewController {
-
-    var carvView:UIView!
+    
+    var cardView:UIView!
     var panning:UIPanGestureRecognizer!
+    var tap:UITapGestureRecognizer!
     var originPoint:CGPoint!
+    var cardViews:[UIView]! {
+        didSet {
+            if let x = self.countLabel {
+                x.text = "Count: \(cardViews.count)"
+            }
+        }
+    }
+    let manager = ModelManager()
+    var countLabel:UILabel!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.carvView = createCardView()
-        self.view.addSubview(self.carvView)
-        self.addReconizer()
+        cardViews = []
+        self.addPanReconizer()
+        self.cardView = createCardView()
+        self.view.addSubview(self.cardView)
+        self.countLabel = createCounter()
+        self.view.addSubview(self.countLabel)
+        
+        manager.loadData()
+        manager.onNewModel = { [weak self] model in
+            guard let `self` = self else { return }
+            DispatchQueue.main.async { [unowned self] in
+                let v = self.createCardView(withModel: model)
+                self.cardViews.append(v)
+            }
+            
+        }
+        
     }
-
+    
     override func viewWillLayoutSubviews() {
-        carvView.center = self.view.center
+        self.cardView.center = self.view.center
     }
     
     

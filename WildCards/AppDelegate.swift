@@ -17,17 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
-        NetworkLayerConfiguration.setup()
-        
-        let dataRequest = DataOperation()
-        dataRequest.success = { item in
-            print("User \(item)")
-        }
-        
-        dataRequest.failure = {
-            error in print(error.localizedDescription)
-        }
-        NetworkQueue.shared.addOperation(dataRequest)
+       
         
         
         return true

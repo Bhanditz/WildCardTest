@@ -29,6 +29,10 @@
 		AA720AA01F0ABC63002ED9E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA720A9F1F0ABC63002ED9E7 /* Assets.xcassets */; };
 		AA720AA31F0ABC63002ED9E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA720AA11F0ABC63002ED9E7 /* LaunchScreen.storyboard */; };
 		AAC108581F0B96C000C15542 /* NetworkLayerConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC108571F0B96C000C15542 /* NetworkLayerConfiguration.swift */; };
+		AAD4E70F1F0BA9030028E089 /* ImageRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E70E1F0BA9030028E089 /* ImageRequest.swift */; };
+		AAD4E7111F0BAA590028E089 /* ImageOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E7101F0BAA590028E089 /* ImageOperation.swift */; };
+		AAD4E7161F0BB62B0028E089 /* ModelManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E7151F0BB62B0028E089 /* ModelManager.swift */; };
+		AAD4E7191F0BB9210028E089 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD4E7181F0BB9210028E089 /* CardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +60,10 @@
 		AA720AA21F0ABC63002ED9E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AA720AA41F0ABC63002ED9E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AAC108571F0B96C000C15542 /* NetworkLayerConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkLayerConfiguration.swift; sourceTree = "<group>"; };
+		AAD4E70E1F0BA9030028E089 /* ImageRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageRequest.swift; sourceTree = "<group>"; };
+		AAD4E7101F0BAA590028E089 /* ImageOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageOperation.swift; sourceTree = "<group>"; };
+		AAD4E7151F0BB62B0028E089 /* ModelManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelManager.swift; sourceTree = "<group>"; };
+		AAD4E7181F0BB9210028E089 /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,7 +77,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		AA3C23DE1F0B954700983F3F /* Network */ = {
+		AA3C23DE1F0B954700983F3F /* API Network  */ = {
 			isa = PBXGroup;
 			children = (
 				AAC108571F0B96C000C15542 /* NetworkLayerConfiguration.swift */,
@@ -81,8 +89,9 @@
 				AAC108511F0B95B000C15542 /* CoreNetwork */,
 				AAC108501F0B959600C15542 /* Core Mapping */,
 				AA3C24081F0B956200983F3F /* Backend */,
+				AAD4E7151F0BB62B0028E089 /* ModelManager.swift */,
 			);
-			name = Network;
+			name = "API Network ";
 			path = "../../../../Desktop/NetworkLayerExample-master-2/Network";
 			sourceTree = "<group>";
 		};
@@ -100,7 +109,7 @@
 		AA720A8C1F0ABC63002ED9E7 = {
 			isa = PBXGroup;
 			children = (
-				AA3C23DE1F0B954700983F3F /* Network */,
+				AA3C23DE1F0B954700983F3F /* API Network  */,
 				AA720A971F0ABC63002ED9E7 /* WildCards */,
 				AA720A961F0ABC63002ED9E7 /* Products */,
 			);
@@ -138,6 +147,7 @@
 		AA720AAB1F0ABE0D002ED9E7 /* CardDeck */ = {
 			isa = PBXGroup;
 			children = (
+				AAD4E7171F0BB9130028E089 /* View */,
 				AA720A9A1F0ABC63002ED9E7 /* CardDeckVC.swift */,
 				AA47F79C1F0AC3A500286499 /* CardDeckExt.swift */,
 			);
@@ -184,6 +194,7 @@
 			isa = PBXGroup;
 			children = (
 				AA3C23F01F0B954700983F3F /* DataOperation.swift */,
+				AAD4E7101F0BAA590028E089 /* ImageOperation.swift */,
 			);
 			name = Operations;
 			sourceTree = "<group>";
@@ -192,6 +203,7 @@
 			isa = PBXGroup;
 			children = (
 				AA3C23F11F0B954700983F3F /* DataRequest.swift */,
+				AAD4E70E1F0BA9030028E089 /* ImageRequest.swift */,
 			);
 			name = Requests;
 			sourceTree = "<group>";
@@ -202,6 +214,14 @@
 				AA3C23F31F0B954700983F3F /* DataResponseMapping.swift */,
 			);
 			name = Mappers;
+			sourceTree = "<group>";
+		};
+		AAD4E7171F0BB9130028E089 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AAD4E7181F0BB9210028E089 /* CardView.swift */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -278,20 +298,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA3C23FC1F0B954700983F3F /* NetworkService.swift in Sources */,
+				AAD4E7111F0BAA590028E089 /* ImageOperation.swift in Sources */,
 				AA3C23FB1F0B954700983F3F /* NetworkQueue.swift in Sources */,
 				AA720A9B1F0ABC63002ED9E7 /* CardDeckVC.swift in Sources */,
 				AA3C23F61F0B954700983F3F /* BackendConfiguration.swift in Sources */,
 				AA47F79D1F0AC3A500286499 /* CardDeckExt.swift in Sources */,
 				AA3C23FF1F0B954700983F3F /* ServiceOperation.swift in Sources */,
+				AAD4E7161F0BB62B0028E089 /* ModelManager.swift in Sources */,
 				AA3C23FD1F0B954700983F3F /* ParsedItem.swift in Sources */,
 				AA3C23F71F0B954700983F3F /* BackendService.swift in Sources */,
 				AAC108581F0B96C000C15542 /* NetworkLayerConfiguration.swift in Sources */,
+				AAD4E70F1F0BA9030028E089 /* ImageRequest.swift in Sources */,
 				AA3C24061F0B954700983F3F /* UserItem.swift in Sources */,
 				AA3C23F51F0B954700983F3F /* BackendAPIRequest.swift in Sources */,
 				AA720A991F0ABC63002ED9E7 /* AppDelegate.swift in Sources */,
 				AA3C23F91F0B954700983F3F /* NSError+Failure.swift in Sources */,
 				AA3C24041F0B954700983F3F /* DataOperation.swift in Sources */,
 				AA3C23FE1F0B954700983F3F /* ResponseMapper.swift in Sources */,
+				AAD4E7191F0BB9210028E089 /* CardView.swift in Sources */,
 				AA3C24071F0B954700983F3F /* DataResponseMapping.swift in Sources */,
 				AA3C24051F0B954700983F3F /* DataRequest.swift in Sources */,
 				AA3C23FA1F0B954700983F3F /* NetworkOperation.swift in Sources */,
