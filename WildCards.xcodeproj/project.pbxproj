@@ -7,15 +7,46 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AA3C23F41F0B954700983F3F /* ArrayResponseMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3C23DF1F0B954700983F3F /* ArrayResponseMapper.swift */; };
+		AA3C23F51F0B954700983F3F /* BackendAPIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3C23E01F0B954700983F3F /* BackendAPIRequest.swift */; };
+		AA3C23F61F0B954700983F3F /* BackendConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3C23E11F0B954700983F3F /* BackendConfiguration.swift */; };
+		AA3C23F71F0B954700983F3F /* BackendService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3C23E21F0B954700983F3F /* BackendService.swift */; };
+		AA3C23F91F0B954700983F3F /* NSError+Failure.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3C23E41F0B954700983F3F /* NSError+Failure.swift */; };
+		AA3C23FA1F0B954700983F3F /* NetworkOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3C23E61F0B954700983F3F /* NetworkOperation.swift */; };
+		AA3C23FB1F0B954700983F3F /* NetworkQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3C23E71F0B954700983F3F /* NetworkQueue.swift */; };
+		AA3C23FC1F0B954700983F3F /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3C23E81F0B954700983F3F /* NetworkService.swift */; };
+		AA3C23FD1F0B954700983F3F /* ParsedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3C23E91F0B954700983F3F /* ParsedItem.swift */; };
+		AA3C23FE1F0B954700983F3F /* ResponseMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3C23EA1F0B954700983F3F /* ResponseMapper.swift */; };
+		AA3C23FF1F0B954700983F3F /* ServiceOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3C23EB1F0B954700983F3F /* ServiceOperation.swift */; };
+		AA3C24041F0B954700983F3F /* DataOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3C23F01F0B954700983F3F /* DataOperation.swift */; };
+		AA3C24051F0B954700983F3F /* DataRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3C23F11F0B954700983F3F /* DataRequest.swift */; };
+		AA3C24061F0B954700983F3F /* UserItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3C23F21F0B954700983F3F /* UserItem.swift */; };
+		AA3C24071F0B954700983F3F /* DataResponseMapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3C23F31F0B954700983F3F /* DataResponseMapping.swift */; };
 		AA47F79D1F0AC3A500286499 /* CardDeckExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA47F79C1F0AC3A500286499 /* CardDeckExt.swift */; };
 		AA720A991F0ABC63002ED9E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA720A981F0ABC63002ED9E7 /* AppDelegate.swift */; };
 		AA720A9B1F0ABC63002ED9E7 /* CardDeckVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA720A9A1F0ABC63002ED9E7 /* CardDeckVC.swift */; };
 		AA720A9E1F0ABC63002ED9E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA720A9C1F0ABC63002ED9E7 /* Main.storyboard */; };
 		AA720AA01F0ABC63002ED9E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA720A9F1F0ABC63002ED9E7 /* Assets.xcassets */; };
 		AA720AA31F0ABC63002ED9E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA720AA11F0ABC63002ED9E7 /* LaunchScreen.storyboard */; };
+		AAC108581F0B96C000C15542 /* NetworkLayerConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC108571F0B96C000C15542 /* NetworkLayerConfiguration.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AA3C23DF1F0B954700983F3F /* ArrayResponseMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayResponseMapper.swift; sourceTree = "<group>"; };
+		AA3C23E01F0B954700983F3F /* BackendAPIRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackendAPIRequest.swift; sourceTree = "<group>"; };
+		AA3C23E11F0B954700983F3F /* BackendConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackendConfiguration.swift; sourceTree = "<group>"; };
+		AA3C23E21F0B954700983F3F /* BackendService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackendService.swift; sourceTree = "<group>"; };
+		AA3C23E41F0B954700983F3F /* NSError+Failure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSError+Failure.swift"; sourceTree = "<group>"; };
+		AA3C23E61F0B954700983F3F /* NetworkOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkOperation.swift; sourceTree = "<group>"; };
+		AA3C23E71F0B954700983F3F /* NetworkQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkQueue.swift; sourceTree = "<group>"; };
+		AA3C23E81F0B954700983F3F /* NetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		AA3C23E91F0B954700983F3F /* ParsedItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParsedItem.swift; sourceTree = "<group>"; };
+		AA3C23EA1F0B954700983F3F /* ResponseMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseMapper.swift; sourceTree = "<group>"; };
+		AA3C23EB1F0B954700983F3F /* ServiceOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceOperation.swift; sourceTree = "<group>"; };
+		AA3C23F01F0B954700983F3F /* DataOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataOperation.swift; sourceTree = "<group>"; };
+		AA3C23F11F0B954700983F3F /* DataRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataRequest.swift; sourceTree = "<group>"; };
+		AA3C23F21F0B954700983F3F /* UserItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserItem.swift; sourceTree = "<group>"; };
+		AA3C23F31F0B954700983F3F /* DataResponseMapping.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataResponseMapping.swift; sourceTree = "<group>"; };
 		AA47F79C1F0AC3A500286499 /* CardDeckExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardDeckExt.swift; sourceTree = "<group>"; };
 		AA720A951F0ABC63002ED9E7 /* WildCards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WildCards.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA720A981F0ABC63002ED9E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +55,7 @@
 		AA720A9F1F0ABC63002ED9E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AA720AA21F0ABC63002ED9E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AA720AA41F0ABC63002ED9E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AAC108571F0B96C000C15542 /* NetworkLayerConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkLayerConfiguration.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,9 +69,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AA3C23DE1F0B954700983F3F /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				AAC108571F0B96C000C15542 /* NetworkLayerConfiguration.swift */,
+				AAC108531F0B95D700C15542 /* Items */,
+				AAC108551F0B961D00C15542 /* Requests */,
+				AAC108541F0B960600C15542 /* Operations */,
+				AAC108561F0B964900C15542 /* Mappers */,
+				AAC108521F0B95C700C15542 /* Helpers */,
+				AAC108511F0B95B000C15542 /* CoreNetwork */,
+				AAC108501F0B959600C15542 /* Core Mapping */,
+				AA3C24081F0B956200983F3F /* Backend */,
+			);
+			name = Network;
+			path = "../../../../Desktop/NetworkLayerExample-master-2/Network";
+			sourceTree = "<group>";
+		};
+		AA3C24081F0B956200983F3F /* Backend */ = {
+			isa = PBXGroup;
+			children = (
+				AA3C23E21F0B954700983F3F /* BackendService.swift */,
+				AA3C23E01F0B954700983F3F /* BackendAPIRequest.swift */,
+				AA3C23E11F0B954700983F3F /* BackendConfiguration.swift */,
+				AA3C23EB1F0B954700983F3F /* ServiceOperation.swift */,
+			);
+			name = Backend;
+			sourceTree = "<group>";
+		};
 		AA720A8C1F0ABC63002ED9E7 = {
 			isa = PBXGroup;
 			children = (
+				AA3C23DE1F0B954700983F3F /* Network */,
 				AA720A971F0ABC63002ED9E7 /* WildCards */,
 				AA720A961F0ABC63002ED9E7 /* Products */,
 			);
@@ -81,6 +142,66 @@
 				AA47F79C1F0AC3A500286499 /* CardDeckExt.swift */,
 			);
 			name = CardDeck;
+			sourceTree = "<group>";
+		};
+		AAC108501F0B959600C15542 /* Core Mapping */ = {
+			isa = PBXGroup;
+			children = (
+				AA3C23DF1F0B954700983F3F /* ArrayResponseMapper.swift */,
+				AA3C23EA1F0B954700983F3F /* ResponseMapper.swift */,
+			);
+			name = "Core Mapping";
+			sourceTree = "<group>";
+		};
+		AAC108511F0B95B000C15542 /* CoreNetwork */ = {
+			isa = PBXGroup;
+			children = (
+				AA3C23E61F0B954700983F3F /* NetworkOperation.swift */,
+				AA3C23E71F0B954700983F3F /* NetworkQueue.swift */,
+				AA3C23E81F0B954700983F3F /* NetworkService.swift */,
+			);
+			name = CoreNetwork;
+			sourceTree = "<group>";
+		};
+		AAC108521F0B95C700C15542 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				AA3C23E41F0B954700983F3F /* NSError+Failure.swift */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		AAC108531F0B95D700C15542 /* Items */ = {
+			isa = PBXGroup;
+			children = (
+				AA3C23E91F0B954700983F3F /* ParsedItem.swift */,
+				AA3C23F21F0B954700983F3F /* UserItem.swift */,
+			);
+			name = Items;
+			sourceTree = "<group>";
+		};
+		AAC108541F0B960600C15542 /* Operations */ = {
+			isa = PBXGroup;
+			children = (
+				AA3C23F01F0B954700983F3F /* DataOperation.swift */,
+			);
+			name = Operations;
+			sourceTree = "<group>";
+		};
+		AAC108551F0B961D00C15542 /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				AA3C23F11F0B954700983F3F /* DataRequest.swift */,
+			);
+			name = Requests;
+			sourceTree = "<group>";
+		};
+		AAC108561F0B964900C15542 /* Mappers */ = {
+			isa = PBXGroup;
+			children = (
+				AA3C23F31F0B954700983F3F /* DataResponseMapping.swift */,
+			);
+			name = Mappers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -156,9 +277,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA3C23FC1F0B954700983F3F /* NetworkService.swift in Sources */,
+				AA3C23FB1F0B954700983F3F /* NetworkQueue.swift in Sources */,
 				AA720A9B1F0ABC63002ED9E7 /* CardDeckVC.swift in Sources */,
+				AA3C23F61F0B954700983F3F /* BackendConfiguration.swift in Sources */,
 				AA47F79D1F0AC3A500286499 /* CardDeckExt.swift in Sources */,
+				AA3C23FF1F0B954700983F3F /* ServiceOperation.swift in Sources */,
+				AA3C23FD1F0B954700983F3F /* ParsedItem.swift in Sources */,
+				AA3C23F71F0B954700983F3F /* BackendService.swift in Sources */,
+				AAC108581F0B96C000C15542 /* NetworkLayerConfiguration.swift in Sources */,
+				AA3C24061F0B954700983F3F /* UserItem.swift in Sources */,
+				AA3C23F51F0B954700983F3F /* BackendAPIRequest.swift in Sources */,
 				AA720A991F0ABC63002ED9E7 /* AppDelegate.swift in Sources */,
+				AA3C23F91F0B954700983F3F /* NSError+Failure.swift in Sources */,
+				AA3C24041F0B954700983F3F /* DataOperation.swift in Sources */,
+				AA3C23FE1F0B954700983F3F /* ResponseMapper.swift in Sources */,
+				AA3C24071F0B954700983F3F /* DataResponseMapping.swift in Sources */,
+				AA3C24051F0B954700983F3F /* DataRequest.swift in Sources */,
+				AA3C23FA1F0B954700983F3F /* NetworkOperation.swift in Sources */,
+				AA3C23F41F0B954700983F3F /* ArrayResponseMapper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
